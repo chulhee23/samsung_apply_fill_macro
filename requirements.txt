@@ -2,3 +2,4 @@ pyperclip
 pandas
 pywin32
 openpyxl
+pyyaml
