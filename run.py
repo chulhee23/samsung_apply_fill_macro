@@ -40,6 +40,10 @@ for index, row in data[start_num:].iterrows():
     univ_type = row["학교"]
     for _ in range(1, univ_type):
         bot.press('tab')
+    
+    major = row["전공"]
+    for i in range(major - 1):
+        bot.press("down_arrow")
     bot.press("enter") #전공명
     next_form(bot)
 
